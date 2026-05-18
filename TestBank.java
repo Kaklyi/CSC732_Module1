@@ -64,7 +64,7 @@ public class TestBank {
                     break;
 
                 case 5:
-                    System.out.println("Thank you for using our bank system!");
+                    System.out.println("Thank you!");
                     break;
 
                 default:

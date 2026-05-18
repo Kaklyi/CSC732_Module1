@@ -30,9 +30,9 @@ public class TestBank {
             System.out.println("What would you like to do?");
             System.out.println("1. Deposit");
             System.out.println("2. Withdraw");
-            System.out.println("3. Show Account Info");
-            System.out.println("4. Exit");
-            System.out.println("5. Apply Interest");
+            System.out.println("3. Apply Interest");
+            System.out.println("4. Show Account Info");
+            System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
 
             choice = input.nextInt();
@@ -53,21 +53,19 @@ public class TestBank {
                     break;
 
                 case 3:
+                    myAccount.applyInterest();
+                    System.out.println();
+                    break;
+
+                case 4:
                     System.out.println();
                     myAccount.displayAccount();
                     System.out.println();
                     break;
 
-                case 4:
+                case 5:
                     System.out.println("Thank you for using our bank system!");
                     break;
-
-                case 5:
-                    myAccount.applyInterest();
-                    System.out.println();
-                    break;
-
-                case 6:
 
                 default:
                     System.out.println("Invalid choice. Try again.\n");
